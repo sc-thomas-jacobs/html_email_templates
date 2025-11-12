@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sickness Notification</title>
+    </head>
+    <body style="margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; background-color: #ffffff;">
+
+        <!-- Hidden Preheader -->
+        <div style="display:none; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
+            Notification: A sickness absence has been submitted via Employee Self-Service.
+        </div>
+
+        <!-- Outer Container -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+            <tr>
+            <td align="center">
+                <table role="presentation" width="100%" style="max-width:600px; width:100%;" cellpadding="0" cellspacing="0">
+
+                <!-- Header -->
+                <tr>
+                    <td style="padding: 15px 20px; font-family: Arial, Helvetica, sans-serif; border-bottom: 1px solid #e0e0e0; background-color: #f9f9f9;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                        <td align="left" style="vertical-align: middle;">
+                            <span style="display: inline-block;">
+                                <img src="https://schoolschoice.co.uk/wp-content/uploads/2023/07/Schools-Choice-Logo-PotVG-1.png" alt="Schools' Choice Logo" width="100" style="display: block; border: 0;">
+                            <div style="font-size: 12px; color: #666; margin-top: 4px;">Part of Vertas Group</div>
+                            </span>
+                        </td>
+                        <td align="right" style="vertical-align: middle; font-size: 14px; color: #666;">
+                            <a href="https://schoolschoice.co.uk/" target="_blank" style="text-decoration: none; color: #0075BE; font-weight: 500;">
+                            schoolschoice.co.uk
+                            </a>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <!-- Spacer -->
+                <tr><td height="30" style="line-height:30px; font-size:0;">&nbsp;</td></tr>
+
+                <!-- Body Header -->
+                <tr>
+                    <td style="padding: 0 20px;">
+                    <h2 style="margin: 0; text-align: center; font-size: 22px; font-weight: 600;">Absence Notification: Employee Absence Submitted</h2>
+                    <p style="font-size: 14px; color: #333; text-align: center; line-height: 1.5;">
+                        An employee has reported a sickness absence using the Self-Service portal. Details are provided below for your reference.
+                    </p>
+                    </td>
+                </tr>
+
+                <!-- Spacer -->
+                <tr><td height="20" style="line-height:20px; font-size:0;">&nbsp;</td></tr>
+
+                <!-- Employee Details Table -->
+                <tr>
+                    <td style="padding: 0 20px;">
+                    <table role="presentation" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; font-size: 14px; color: #333;">
+                        <tr style="background-color: #f2f9ff;">
+                        <td style="text-align: right; padding-right: 10px; width: 40%;"><strong>Employee</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<~FORMATTED_NM.TWF_PER_BLOB>> (Ref: <<~REFERENCE_NO.TWF_PER_BLOB>>)</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: right; padding-right: 10px;"><strong>Position</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<~JOB_TITLE.TWF_DUM_JOB>></td>
+                        </tr>
+                        <tr style="background-color: #f2f9ff;">
+                        <td style="text-align: right; padding-right: 10px;"><strong>Date</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<ABS_D.TABSENCE>> (<<ABS_T.TABSENCE>>) – <<ABS_ED.TABSENCE>> (<<ABS_ET.TABSENCE>>)</td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: right; padding-right: 10px;"><strong>Absence Reason</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<AUTH_REASON.TABS_AUTH>></td>
+                        </tr>
+                        <tr style="background-color: #f2f9ff;">
+                        <td style="text-align: right; padding-right: 10px;"><strong>Absence Type</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<ABS_TYPE_ID.TABSENCE>></td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: right; padding-right: 10px;"><strong>Additional Notes</strong></td>
+                        <td style="text-align: left; padding-left: 10px;"><<NOTE.TNOTE>></td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <!-- Spacer -->
+                <tr><td height="30" style="line-height:30px; font-size:0;">&nbsp;</td></tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="background-color: #0075BE; color: #ffffff; padding: 30px 20px; text-align: center;">
+                    <p style="margin: 0 0 10px; font-size: 22px; font-weight: 600;">Schools' Choice</p>
+                    <p style="margin: 0 0 15px; font-size: 14px; line-height: 1.5;">
+                        <em>This is an automated message from Schools’ Choice, your trusted school services provider.<br>
+                        Replies to this email are not monitored.</em>
+                    </p>
+                    <div style="margin-bottom: 10px;">
+                        <a href="https://schoolschoice.co.uk/" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; margin: 0 10px;">
+                        🌐 schoolschoice.co.uk
+                        </a>
+                        |
+                        <a href="https://vertas.co.uk/company/schools-choice/" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; margin: 0 10px;">
+                        About Us
+                        </a>
+                    </div>
+                    <p style="margin: 0; font-size: 12px; color: #e0e0e0;">
+                        Schools’ Choice, a Vertas Group company
+                    </p>
+                    </td>
+                </tr>
+
+                </table>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>
