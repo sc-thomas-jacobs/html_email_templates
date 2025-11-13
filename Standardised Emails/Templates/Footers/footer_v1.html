@@ -1,33 +1,43 @@
 <html>
-    <body>
-            <table>
-                <!-- Spacer -->
-                <tr><td height="30" style="line-height:30px; font-size:0;">&nbsp;</td></tr>
+    <!--
+        Schools' Choice Email Template
+        Author: [Your Name]
+        Last Updated: 2025-11-13
+        Purpose: Notification email for time and expenses claim submission
+        Notes:
+            - Uses max-width:600px for layout compatibility
+            - Inline styles required for email client support
+            - Dynamic fields: <<FST_REF_NO.TWEB_FST_GRP>>, <<NOTE.TNOTE>>, etc.
+            - Tested on Gmail, Outlook, Apple Mail.
+    -->
+  <body>
+    <!-- Footer Table (full width) -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #0075BE;border-top: 1px solid #005491;">
+        <tr>
+            <td style="padding: 30px 20px; text-align: center; color: #ffffff;">
+            <p style="margin: 0 0 10px; font-size: 20px; font-weight: 600;">Schools' Choice</p>
+            <p style="margin: 0 0 15px; font-size: 9px; line-height: 1.5;">
+                <em>
+                This is an automated message from Schools’ Choice, your trusted school services provider.<br><br>
+                Replies to this email are not monitored.
+                </em>
+            </p>
 
-                <!-- Footer -->
-                <tr>
-                    <td style="background-color: #0075BE; color: #ffffff; padding: 30px 20px; text-align: center;">
-                        <p style="margin: 0 0 10px; font-size: 22px; font-weight: 600;">Schools' Choice</p>
-                        <p style="margin: 0 0 15px; font-size: 14px; line-height: 1.5;">
-                            <em>This is an automated message from Schools’ Choice, your trusted school services provider.<br>
-                            Replies to this email are not monitored.</em>
-                        </p>
-                        
-                        <div style="margin-bottom: 10px;">
-                            <a href="https://schoolschoice.co.uk/" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; margin: 0 10px;">
-                            🌐 schoolschoice.co.uk
-                            </a>
-                            |
-                            <a href="https://vertas.co.uk/company/schools-choice/" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; margin: 0 10px;">
-                            About Us
-                            </a>
-                        </div>
+            <div style="margin-bottom: 10px;">
+                <a href="https://schoolschoice.co.uk/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 600; font-size: 10px; margin: 0 10px;">
+                🌐 schoolschoice.co.uk
+                </a>
+                |
+                <a href="https://vertas.co.uk/company/schools-choice/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 600; font-size: 10px; margin: 0 10px;">
+                About Us
+                </a>
+            </div>
 
-                        <p style="margin: 0; font-size: 12px; color: #e0e0e0;">
-                            Schools’ Choice, a Vertas Group company
-                        </p>
-                    </td>
-                </tr>
-            </table>
-    </body>
+            <p style="margin: 0; font-size: 10px; color: #e0e0e0;">
+                <em>Schools’ Choice, a Vertas Group company</em>
+            </p>
+            </td>
+        </tr>
+    </table>
+  </body>
 </html>
