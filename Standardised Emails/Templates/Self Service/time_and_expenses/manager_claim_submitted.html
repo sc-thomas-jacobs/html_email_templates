@@ -53,7 +53,7 @@
                 Time and Expenses Claim Submitted
             </h1>
             <h2 style="font-size: 16px; font-weight: 600; font-family: Arial, Helvetica, sans-serif; margin: 10px 0 0; line-height: 1.3; color: #0075BE;">
-                Approval Required - Please Review in myPeople
+                Approval Required - Please Review in iTrent
             </h2>
         </td>
         </tr>
@@ -63,29 +63,63 @@
 
         <!-- Main Content -->
         <tr>
-        <td style="padding: 0 20px;">
+        <td style="padding: 20px 20px; margin-bottom:20px;">
             <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
                 <td style="font-size: 14px; line-height: 1.6; color: #333;">
                     <p>
-                        You are receiving this notification because <<~FORMATTED_NM.TWF_PER_BLOB>> 
+                        You are receiving this notification because (Ref.<<~REFERENCE_NO.TWF_PER_BLOB>>) <<~PERSON_ID.TWF_PER_BLOB>>
                         has submitted a time and expenses claim for their role as <<~JOB_TITLE.TWF_DUM_JOB>>. 
-                        This claim is now awaiting your review and approval in <a href="https://itrent.suffolk.gov.uk/tprod_web/itrent_wrd/run/etadm001gf.main" target="_blank" style="color: #0075BE; text-decoration: underline;">myPeople</a>.
+                        This claim is now awaiting your review and approval in iTrent.
                     </p>
                 </td>
             </tr>
             </table>
-        </td>
+        <tr>
+            <td style="border-top: solid #dde6ed 1px; background-color: #f0f8ff; padding: 15px; margin-top: 20px; border-radius: 5px; font-size: 14px; line-height: 1.6; color: #333;"> 
+                <!-- Section: Claim Details -->
+                <h3 style="padding:20px; text-align: center; font-size: 14px; font-weight: 600; font-family: Arial, Helvetica, sans-serif; margin: 10px 0 0; line-height: 1.3; color: #0075BE;">
+                    Claim Details
+                </h3>
+
+            <!-- Claim Details Table -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 auto; font-family: Arial, Helvetica, sans-serif; border-collapse:collapse;">
+            <tr>
+                <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                Claim Reference:
+                </td>
+                <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                <<FST_REF_NO.TWEB_FST_GRP>>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                Claim Summary:
+                </td>
+                <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                <<SUMMARY_HTML.TWEB_FST_GRP>>
+                </td>
+            </tr>
+            </table>
+
+
+
+                <!-- Policy Statement -->
+                <p style="text-align: center; margin-top:40px; font-size:12px; color:#666; line-height:1.4;">
+                    Keeping your personal information safe and secure is very important to us. 
+                    For more information please view our <a href="https://www.schoolschoice.co.uk/wp-content/uploads/2022/03/HR-PL189-Vertas-Group-Client-Privacy-Notice-V4_-31082022.pdf" style="color:#0075BE; text-decoration:underline;">HR Privacy Statement</a>.
+                </p>
+            </td>
         </tr>
 
-        <!-- Spacer -->
-        <tr><td height="30" style="line-height:30px; font-size:0;">&nbsp;</td></tr>
+        </td>
+        </tr>
 
         <!-- Footer -->
         <tr>
         <td>
             <!-- Footer Table (full width) -->
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #0075BE; border-top: 1px solid #005491;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #0075BE; border-top: px solid #005491;">
                 <tr>
                     <td style="padding: 30px 20px; text-align: center; color: #ffffff;">
                     <p style="margin: 0 0 10px; font-size: 20px; font-weight: 600;">Schools' Choice</p>
