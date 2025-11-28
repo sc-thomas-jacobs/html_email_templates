@@ -2,7 +2,7 @@
   <body style="margin:0; padding:0; font-family: Arial, Helvetica, sans-serif;">
     <!-- Hidden Preheader (for inbox preview, hidden in email body) -->
     <div style="display:none; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all;">
-        Time and Expenses Claim Approved.
+        Absence Notification - Employee Absence Rejected.
     </div>
 
     <!-- Wrapper Table (centers content, max width for desktop) -->
@@ -48,10 +48,10 @@
         <tr>
           <td style="padding:0 20px; text-align:center;">
             <h1 style="font-size:24px; font-weight:600; font-family:Arial, Helvetica, sans-serif; margin:0; line-height:1.3;">
-              Time and Expenses Claim Approved
+                Absence Notification
             </h1>
             <h2 style="font-size:16px; font-weight:600; font-family:Arial, Helvetica, sans-serif; margin:10px 0 0; line-height:1.3; color:#0075BE;">
-              Your Claim Has Been Approved - Please Review The Details Below
+              Your Absence Has Been Rejected - Please Review The Details Below
             </h2>
           </td>
         </tr>
@@ -65,44 +65,70 @@
             <table width="100%" cellpadding="0" cellspacing="0">
               <tr>
                 <td style="font-size:14px; line-height:1.6; color:#333;">
-                  <p style="margin:0;">
-                    This notification confirms that your recent time and expenses claim has been approved 
-                    by your line manager (<<~REPORT_MANGR.TWF_DUM_JOB>>).  
-                    Please review the details of your claim below for further information.
-                  </p>
+                    <p style="margin:0;">
+                        This notification confirms that your recent absence claim has been rejected by your line manager (<<~REPORT_MANGR.TWF_DUM_JOB>>). 
+                        Please review the details of your claim below for further information.                  
+                    </p>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <!-- Claim Details Section -->
+        <!-- Absence Details Section -->
         <tr>
           <td style="border-top:1px solid #dde6ed; background-color:#f0f8ff; padding:15px; font-size:14px; line-height:1.6; color:#333;">
             
             <!-- Section Header -->
             <h3 style="padding:20px; text-align:center; font-size:14px; font-weight:600; font-family:Arial, Helvetica, sans-serif; margin:0; line-height:1.3; color:#0075BE;">
-              Claim Details
+              Absence Details
             </h3>
 
-            <!-- Claim Details Table -->
+            <!-- Absence Details Table -->
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 auto; font-family:Arial, Helvetica, sans-serif; border-collapse:collapse;">
-              <tr>
-                <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
-                  Claim Reference:
-                </td>
-                <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
-                  <<FST_REF_NO.TWEB_FST_GRP>>
-                </td>
-              </tr>
-              <tr>
-                <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
-                  Claim Summary:
-                </td>
-                <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
-                  <<SUMMARY_HTML.TWEB_FST_GRP>>
-                </td>
-              </tr>
+                <tr>
+                    <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                        Employee
+                    </td>
+                    <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                        <<~FORMATTED_NM.TWF_PER_BLOB>> (Ref: <<~REFERENCE_NO.TWF_PER_BLOB>>)
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                        Position:
+                    </td>
+                    <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                        <<~JOB_TITLE.TWF_DUM_JOB>>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                        Absence Type:
+                    </td>
+                    <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                        <<ABS_TYPE_ID.TABSENCE>>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                        Date:
+                    </td>
+                    <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                        <<ABS_D.TABSENCE>> (<<ABS_T.TABSENCE>>) – <<ABS_ED.TABSENCE>> (<<ABS_ET.TABSENCE>>)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="50%" align="right" style="font-size:14px; font-weight:600; color:#333; padding:8px;">
+                        Additional Notes:
+                    </td>
+                    <td width="50%" align="left" style="font-size:14px; color:#333; padding:8px;">
+                        <<AUTH_REASON.TABS_AUTH>>
+                    </td>
+                </tr>
             </table>
 
             <!-- Policy Statement -->
